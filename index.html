@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head class="render-head"> </head>
+  <body>
+    <header class="render-home-header"></header>
+    <main>
+      <div class="render-hamburger-toggle"></div>
+      <div class="render-categories"></div>
+      <section class="render-featured"></section>
+    </main>
+    <footer>
+      <div class="render-footer"></div>
+    </footer>
+    <script src="./assets/scripts/head.js"></script>
+    <script src="./assets/scripts/home-header.js"></script>
+    <script src="./assets/scripts/featured.js"></script>
+    <script src="./assets/scripts/hamburger-toggle.js"></script>
+    <script src="./assets/scripts/categories.js"></script>
+    <script src="./assets/scripts/footer.js"></script>
+    <script>
+      const renderFooter = document.querySelector(".render-footer");
+      renderFooter.innerHTML = generateFooter("home");
+    </script>
+  </body>
+</html>

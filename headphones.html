@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head class="render-head"> </head>
+  <body>
+    <div class="render-hamburger-toggle"></div>
+
+    <header class="render-header"></header>
+
+    <main>
+      <section id="products" class="products container"></section>
+      <div class="render-categories"></div>
+    </main>
+    <footer>
+      <div class="render-footer"></div>
+    </footer>
+    <script src="./assets/scripts/head.js"></script>
+    <script src="./assets/scripts/header.js"></script>
+    <script src="./assets/scripts/hamburger-toggle.js"></script>
+
+    <script src="./assets/scripts/products.js"></script>
+    <script>
+      const headerElement = document.querySelector(".render-header");
+      headerElement.innerHTML = generateHeader("headphones");
+    </script>
+    <script src="./assets/scripts/categories.js"></script>
+    <script src="./assets/scripts/footer.js"></script>
+    <script>
+      const renderFooter = document.querySelector(".render-footer");
+      renderFooter.innerHTML = generateFooter("headphones");
+    </script>
+    <script>
+      renderHeapdhones();
+
+      async function renderHeapdhones() {
+        const headPhones = await getHeadphones();
+        headPhones.forEach((headPhone) => {
+          appendProduct(headPhone, "products");
+        });
+      }
+    </script>
+  </body>
+</html>

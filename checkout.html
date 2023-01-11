@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head class="render-head"> </head>
+
+  <body>
+    <header class="render-hamburger-toggle"></header>
+    <header class="render-checkout-header"></header>
+    <div class="form container">
+      <main class="checkout-container">
+        <div class="form-wrapper card">
+          <form class="form">
+            <div class="checkout">
+              <h1>Checkout</h1>
+
+              <div class="form-group">
+                <h2>Billing Details</h2>
+                <div class="input-group">
+                  <label for="name">Name:</label><br />
+                  <input type="text" id="name" name="name" /><br />
+                </div>
+                <div class="input-group">
+                  <label for="email">Email Address:</label><br />
+                  <input type="email" id="email" name="email" /><br />
+                </div>
+                <div class="input-group">
+                  <label for="phone">Phone Number:</label><br />
+                  <input type="tel" id="phone" name="phone" /><br />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <h2>Shipping Info</h2>
+                <div class="input-group">
+                  <label for="address">Your Address:</label><br />
+                  <input type="text" id="address" name="address" /><br />
+                </div>
+                <div class="input-group">
+                  <label for="zip">ZIP Code:</label><br />
+                  <input type="text" id="zip" name="zip" /><br />
+                </div>
+
+                <div class="input-group">
+                  <label for="city">City:</label><br />
+                  <input type="text" id="city" name="city" /><br />
+                </div>
+
+                <div class="input-group">
+                  <label for="country">Country:</label><br />
+                  <input type="text" id="country" name="country" /><br />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <h2>Payment Details</h2>
+
+                <div class="checkbox-group">
+                  <span>
+                    <input
+                      type="radio"
+                      id="payment-e-money"
+                      name="payment"
+                      value="e-money"
+                    />
+                  </span>
+                  <label for="payment-e-money">e-Money:</label>
+                </div>
+
+                <div class="checkbox-group">
+                  <span>
+                    <input
+                      type="radio"
+                      id="payment-cod"
+                      name="payment"
+                      value="cod"
+                    />
+                  </span>
+                  <label for="payment-cod">Cash On Delivery:</label>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+
+        <div class="summary-wrapper card">
+          <h3>Summary</h3>
+          <div class="prices">
+            <div class="price">
+              <span>Total:</span>
+              <span class="number">$50</span>
+            </div>
+
+            <div class="price">
+              <span>Shipping:</span>
+              <span class="number">$50</span>
+            </div>
+
+            <div class="price">
+              <span>VAT (Included):</span>
+              <span class="number">$0.00</span>
+            </div>
+
+            <div class="price total">
+              <span>Grand Total:</span>
+              <span class="number">$50.00</span>
+            </div>
+          </div>
+
+          <button class="btn btn-beige" type="submit">Continue & Pay</button>
+        </div>
+      </main>
+    </div>
+
+    <footer>
+      <div class="render-checkout-footer"></div>
+    </footer>
+    <!-- Home
+  Headphones
+  Speakers
+  Earphones
+<!-- 
+  
+  Cart Modal -->
+    <!-- Cart(3) Remove All XX99 MK II x1 $2,999 XX59 x2 $899 YX1 x1 $599 Total
+    $5,396 Checkout -->
+    <!-- Cart modal end -->
+    <!-- 
+    Go back Checkout Billing details Name Email address Phone number Shipping
+    info Address ZIP code City Country Payment details Payment method e-Money
+    Cash on delivery e-Money number e-money PIN The ‘Cash on Delivery’ option
+    enables you to pay in cash when our delivery courier arrives at your
+    residence. Just make sure your address is correct so that your order will
+    not be cancelled. Summary XX99 MK II x1 $2,999 XX59 x2 $899 YX1 x1 $599
+    Total $5,396 Shipping $10 VAT $120 Grand total $5,526 Continue & pay -->
+
+    <!-- Success Modal -->
+    <!-- Thank you for your order You will receive an email confirmation shortly.
+    XX99 MK II x 1 $2,999 and 2 other item(s) Grand total $5,526 Back to home -->
+    <!-- End success modal -->
+
+    <!-- Home Headphones Speakers Earphones Audiophile is an all in one stop to
+    fulfill your audio needs. We're a small team of music lovers and sound
+    specialists who are devoted to helping you get the most out of personal
+    audio. Come and visit our demo facility - we’re open 7 days a week.
+    Copyright 2021. All Rights Reserved -->
+    <script src="./assets/scripts/hamburger-toggle.js"></script>
+
+    <script src="./assets/scripts/head.js"></script>
+    <script src="./assets/scripts/checkout-header.js"></script>
+    <script src="./assets/scripts/checkout-footer.js"></script>
+  </body>
+</html>

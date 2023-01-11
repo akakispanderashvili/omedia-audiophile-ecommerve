@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head class="render-head"> </head>
+
+  <body>
+    <header class="render-hamburger-toggle"></header>
+    <header class="render-header"></header>
+
+    <main>
+      <section id="products" class="products container"></section>
+
+      <div class="render-categories"></div>
+    </main>
+    <footer>
+      <div class="render-footer"></div>
+    </footer>
+    <script src="./assets/scripts/head.js"></script>
+    <script src="./assets/scripts/header.js"></script>
+    <script>
+      const headerElement = document.querySelector(".render-header");
+      headerElement.innerHTML = generateHeader("speakers");
+    </script>
+    <script src="./assets/scripts/categories.js"></script>
+    <script src="./assets/scripts/footer.js"></script>
+    <script>
+      const renderFooter = document.querySelector(".render-footer");
+      renderFooter.innerHTML = generateFooter("speakers");
+    </script>
+    <script src="./assets/scripts/hamburger-toggle.js"></script>
+
+    <script src="./assets/scripts/products.js"></script>
+    <script>
+      renderSpeakes();
+
+      async function renderSpeakes() {
+        const speakers = await gedSpeakers();
+        speakers.forEach((speaker) => {
+          appendProduct(speaker, "products");
+        });
+      }
+    </script>
+  </body>
+</html>
